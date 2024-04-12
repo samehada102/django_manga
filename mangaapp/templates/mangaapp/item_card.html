@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-3">
+        <p>作品名</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.name }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>読み終えた巻</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.finish }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>最新刊</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.newest }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>次巻発売日</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.next|date:"Y/m/d" }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>備考</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.memo|linebreaksbr }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>登録日</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.created_at|date:"Y/m/d G:i:s" }}</p>
+    </div>
+</div>
